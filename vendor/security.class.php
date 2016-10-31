@@ -38,7 +38,7 @@
 		public function proxyCheck()
 		{
 			if (
-				  $_SERVER['HTTP_X_FORWARDED_FOR']
+			      $_SERVER['HTTP_X_FORWARDED_FOR']
 			   || $_SERVER['HTTP_X_FORWARDED']
 			   || $_SERVER['HTTP_FORWARDED_FOR']
 			   || $_SERVER['HTTP_VIA']
@@ -71,8 +71,6 @@
 			return $total_time;
 		}
 		
-
-
 		public function debug()
 		{
 				return "<strong>IP Address: </strong> {$this->realIP()}<br/>\n" .
@@ -82,12 +80,6 @@
 				"<strong>Proxy Detection: {$this->proxyCheck()}</strong><br/>";
 		}
 
-
-
-
 	}
-
-
-
 
 ?>
